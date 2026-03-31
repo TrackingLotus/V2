@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexora IT Service Desk</title>
+    <title>ICT-Loket Noordkade | Hulp bij ICT-vragen</title>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +18,16 @@
         <div class="container">
             <div class="logo">
                 <span class="logo-icon"><img src="ICT Loket Logo.jpg" alt="ICT Loket Logo"
-                        class="alt-logo"></span>Nexora IT
+                        class="alt-logo"></span>ICT-Loket
 
             </div>
-            <nav class="main-nav">
+            <!-- mobiele menu knop -->
+            <button class="nav-toggle" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="site-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav" id="site-navigation">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#over-ons">Over Ons</a></li>
@@ -38,16 +44,16 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-text">
-                    <h1>Uw betrouwbare partner in IT-ondersteuning</h1>
-                    <p>Snelle, veilige en efficiënte IT-oplossingen voor onderwijs en bedrijven.</p>
+                    <h1>Hulp nodig met ICT? Wij staan voor u klaar!</h1>
+                    <p>Bij het ICT-loket op de Noordkade in Veghel bent u van harte welkom voor gratis hulp bij computers, laptops, tablets, telefoons en printers. Loop gerust binnen of neem contact met ons op; wij helpen u graag verder.</p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-secondary">Meld een storing</a>
-                        <a href="#diensten" class="btn btn-primary">Bekijk onze diensten</a>
+                        <a href="#bezoek-ons" class="btn btn-secondary">Loop binnen</a>
+                        <a href="#contact" class="btn btn-primary">Neem contact op</a>
                     </div>
                 </div>
                 <div class="hero-illustration">
                     <!-- daadwerkelijke afbeelding in plaats van placeholder -->
-                    <img src="computer-reparatie-arnhem.jpg" alt="Computer reparatie Arnhem">
+                    <img src="computer-reparatie-arnhem.jpg" alt="ICT ondersteuning op de Noordkade">
                 </div>
             </div>
         </section>
@@ -55,23 +61,21 @@
         <!-- over ons -->
         <section id="over-ons" class="about">
             <div class="container">
-                <h2>Over Nexora IT</h2>
-                <p>Nexora IT Service Desk is opgericht door gepassioneerde IT-professionals met één doel: betrouwbare
-                    ondersteuning leveren aan organisaties en onderwijsinstellingen. Wij geloven in heldere
-                    communicatie, snelle service en continue verbetering. Ons team is 24/7 bereikbaar en heeft al
-                    duizenden incidenten succesvol opgelost.</p>
+                <h2>Over ICT-Loket</h2>
+                <p>Het ICT-loket op de Noordkade in Veghel wordt met enthousiasme gerund door ICT-studenten van het Koning Willem I College. Tijdens de coronaperiode ontstond dit initiatief, toen stageplekken beperkt beschikbaar waren.</p>
+                <p>Met de kennis en vaardigheden uit de ICT-opleidingen helpen wij zowel particulieren als bedrijven graag verder met uiteenlopende vragen en praktische problemen. Daarbij werken we samen met lokale bedrijven, zodat we u altijd zo goed mogelijk kunnen ondersteunen.</p>
                 <div class="stats">
                     <article class="stat-card">
-                        <h3>1500+</h3>
-                        <p>opgeloste tickets</p>
+                        <h3>KW1C</h3>
+                        <p>gerund door ICT-studenten</p>
                     </article>
                     <article class="stat-card">
-                        <h3>98%</h3>
-                        <p>klanttevredenheid</p>
+                        <h3>Noordkade</h3>
+                        <p>gevestigd in Veghel</p>
                     </article>
                     <article class="stat-card">
-                        <h3>24/7</h3>
-                        <p>support beschikbaar</p>
+                        <h3>Gratis</h3>
+                        <p>hulp voor particulier en bedrijf</p>
                     </article>
                 </div>
             </div>
@@ -83,42 +87,212 @@
                 <h2>Onze Diensten</h2>
                 <div class="cards">
                     <article class="service-card">
-                        <div class="service-icon">🔑</div>
-                        <h3>Wachtwoordbeheer</h3>
-                        <p>Beheer en herstel van gebruikerswachtwoorden met strenge beveiliging.</p>
+                        <div class="service-icon">&#128187;</div>
+                        <h3>Hulp bij computer en laptop</h3>
+                        <p>Heeft uw computer of laptop kuren? Wij kijken graag met u mee en helpen u rustig verder met storingen, instellingen en praktische vragen.</p>
                         <a href="#contact" class="btn btn-primary">Meer informatie</a>
                     </article>
                     <article class="service-card">
-                        <div class="service-icon">💾</div>
-                        <h3>Software installatie</h3>
-                        <p>Installatie en updates van bedrijfskritische software.</p>
+                        <div class="service-icon">📱</div>
+                        <h3>Ondersteuning voor telefoon en tablet</h3>
+                        <p>Ook voor mobiele apparaten bent u bij ons van harte welkom. We denken met u mee bij problemen, uitleg en alledaagse gebruiksvragen.</p>
                         <a href="#contact" class="btn btn-primary">Meer informatie</a>
                     </article>
                     <article class="service-card">
-                        <div class="service-icon">🌐</div>
-                        <h3>Netwerkbeheer</h3>
-                        <p>Monitoren en optimaliseren van netwerkinfrastructuur.</p>
+                        <div class="service-icon">🖨️</div>
+                        <h3>Printer en hardware hulp</h3>
+                        <p>Werkt uw printer of randapparatuur niet zoals het hoort? Samen zoeken we graag naar een duidelijke en passende oplossing.</p>
                         <a href="#contact" class="btn btn-primary">Meer informatie</a>
                     </article>
                     <article class="service-card">
                         <div class="service-icon">🛠️</div>
-                        <h3>Hardware ondersteuning</h3>
-                        <p>Diagnose en reparatie van desktops, laptops en servers.</p>
+                        <h3>Reparaties van apparaten</h3>
+                        <p>Is er iets kapot? Wij onderzoeken het probleem zorgvuldig en geven u een eerlijk en helder advies over reparatie en vervolgstappen.</p>
                         <a href="#contact" class="btn btn-primary">Meer informatie</a>
                     </article>
                     <article class="service-card">
-                        <div class="service-icon">☁️</div>
-                        <h3>Cloud services</h3>
-                        <p>Implementatie en beheer van cloudomgevingen.</p>
+                        <div class="service-icon">♻️</div>
+                        <h3>Refurbished laptops</h3>
+                        <p>Op zoek naar een betaalbare en betrouwbare laptop? Wij helpen u graag bij het vinden van een refurbished model dat bij uw wensen past.</p>
                         <a href="#contact" class="btn btn-primary">Meer informatie</a>
                     </article>
                     <article class="service-card">
-                        <div class="service-icon">🔒</div>
-                        <h3>Beveiligingsbeheer</h3>
-                        <p>Bescherming tegen bedreigingen en naleving van security‑standaarden.</p>
+                        <div class="service-icon">🤝</div>
+                        <h3>Persoonlijk ICT-advies</h3>
+                        <p>Van een kleine vraag tot praktische ondersteuning: wij nemen graag de tijd om particulieren en bedrijven vriendelijk en duidelijk verder te helpen.</p>
                         <a href="#contact" class="btn btn-primary">Meer informatie</a>
                     </article>
                 </div>
+            </div>
+        </section>
+
+        <!-- uitgebreide diensten sectie -->
+        <section id="extra-diensten" class="services services-alt">
+            <div class="container">
+                <h2>Waar kunnen wij u mee helpen?</h2>
+                <p class="section-intro">Of het nu gaat om installatie, instellingen of het gebruik van uw apparaat: wij nemen graag de tijd om u stap voor stap verder te helpen.</p>
+                <div class="cards">
+                    <article class="service-card">
+                        <div class="service-icon">🪟</div>
+                        <h3>Windows installeren</h3>
+                        <p>Wij helpen u met het installeren of opnieuw instellen van Windows, zodat uw computer weer veilig en prettig werkt.</p>
+                        <a href="#contact" class="btn btn-primary">Ik wil hulp</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">📧</div>
+                        <h3>E-mailadressen aanmaken en instellen</h3>
+                        <p>Van een nieuw e-mailadres tot een correcte instelling op uw apparaat: wij regelen het graag samen met u.</p>
+                        <a href="#contact" class="btn btn-primary">Ik wil hulp</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">📲</div>
+                        <h3>Apps installeren op iPhone en Android</h3>
+                        <p>Wij helpen u bij het installeren van handige apps op uw smartphone en zorgen dat alles goed ingesteld staat.</p>
+                        <a href="#contact" class="btn btn-primary">Ik wil hulp</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Apps installeren op laptop, tablet of computer</h3>
+                        <p>Heeft u een programma of app nodig? Wij installeren dit netjes en geven waar nodig een korte uitleg.</p>
+                        <a href="#contact" class="btn btn-primary">Ik wil hulp</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">⚙️</div>
+                        <h3>Hulp bij instellingen</h3>
+                        <p>Wij leggen instellingen rustig uit en helpen u bij het juist instellen van uw apparaten, helemaal op uw tempo.</p>
+                        <a href="#contact" class="btn btn-primary">Ik wil hulp</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🧹</div>
+                        <h3>Computer opschonen en opslagruimte vrijmaken</h3>
+                        <p>Wij schonen uw computer zorgvuldig op en maken, waar mogelijk gecertificeerd, weer extra ruimte vrij.</p>
+                        <a href="#contact" class="btn btn-primary">Ik wil hulp</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- producten en aanbod sectie -->
+        <section id="aanbod" class="services">
+            <div class="container">
+                <h2>Wat bieden wij aan?</h2>
+                <p class="section-intro">Naast ondersteuning kunt u bij ons ook terecht voor betrouwbare apparaten en accessoires voor dagelijks gebruik.</p>
+                <div class="cards">
+                    <article class="service-card">
+                        <div class="service-icon">♻️</div>
+                        <h3>Refurbished laptops</h3>
+                        <p>Een duurzame en betaalbare keuze voor wie op zoek is naar een betrouwbare laptop met een tweede leven.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🖥️</div>
+                        <h3>PC’s</h3>
+                        <p>Geschikte desktopoplossingen voor thuis, studie of werk, afgestemd op uw wensen.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🖼️</div>
+                        <h3>Beeldschermen</h3>
+                        <p>Praktische beeldschermen voor een prettige en overzichtelijke werkplek.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🎧</div>
+                        <h3>Headsets</h3>
+                        <p>Handig voor videobellen, online lessen of rustig werken met goed geluid.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">⌨️</div>
+                        <h3>Toetsenborden</h3>
+                        <p>Comfortabele toetsenborden die passen bij uw manier van werken en gebruiken.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🖱️</div>
+                        <h3>Muizen</h3>
+                        <p>Betrouwbare muizen voor dagelijks gebruik, eenvoudig en prettig in gebruik.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- donatie sectie -->
+        <section id="donaties" class="info-section alt-bg">
+            <div class="container">
+                <h2>Donaties</h2>
+                <article class="info-card callout-card">
+                    <h3>Geef een laptop een tweede leven</h3>
+                    <p>Wij nemen graag gebruikte laptops in als donatie. Hiermee kunnen wij andere klanten helpen en apparaten een waardevolle tweede kans geven.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- locatie en adres sectie -->
+        <section id="bezoek-ons" class="info-section">
+            <div class="container">
+                <h2>Bezoek ons</h2>
+                <div class="info-grid">
+                    <article class="info-card">
+                        <h3>Adres</h3>
+                        <p><strong>Verlengde Noordkade 14</strong><br>Veghel</p>
+                        <p>U bent van harte welkom om langs te komen met uw ICT-vraag. Wij ontvangen u graag op onze locatie op de Noordkade.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Routebeschrijving</h3>
+                        <ul class="route-steps">
+                            <li>Parkeer bij P2</li>
+                            <li>Neem ingang “Klok”</li>
+                            <li>Loop rechtdoor</li>
+                            <li>Neem de trap naar boven</li>
+                            <li>Wij zitten boven “De Plank”</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- openingstijden sectie -->
+        <section id="openingstijden" class="info-section alt-bg">
+            <div class="container">
+                <h2>Openingstijden</h2>
+                <article class="info-card">
+                    <div class="table-wrap">
+                        <table class="hours-table">
+                            <thead>
+                                <tr>
+                                    <th>Periode</th>
+                                    <th>Dagen</th>
+                                    <th>Tijd</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>September t/m februari</td>
+                                    <td>maandag &amp; dinsdag</td>
+                                    <td>09:30 – 17:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Februari t/m mei</td>
+                                    <td>maandag, dinsdag, donderdag, vrijdag</td>
+                                    <td>09:30 – 17:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Mei t/m juni</td>
+                                    <td>donderdag &amp; vrijdag</td>
+                                    <td>09:30 – 17:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="appointment-note">Wij werken bij voorkeur op afspraak.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- social media sectie -->
+        <section id="volg-ons" class="info-section">
+            <div class="container">
+                <h2>Volg ons</h2>
+                <article class="info-card social-card">
+                    <p>Blijf op de hoogte van nieuws, updates en activiteiten van het ICT-loket.</p>
+                    <a href="https://www.facebook.com/Ictloketnoordkade" class="social-link" target="_blank" rel="noopener noreferrer">Facebook: @Ictloketnoordkade</a>
+                </article>
             </div>
         </section>
 
@@ -130,148 +304,110 @@
             <div class="container">
                 <!-- Sectie titel en introductie -->
                 <h2>Veelgestelde vragen</h2>
-                <p>Hier vindt u antwoorden op de meest gestelde vragen over onze IT-diensten, supportprocedures en het
-                    gebruik van ons serviceportaal.</p>
+                <p>Hier beantwoorden we graag veelgestelde vragen over bezoek, ondersteuning en de mogelijkheden van het ICT-loket op de Noordkade.</p>
 
                 <!-- FAQ wrapper voor alle categorieën -->
                 <div class="faq-wrapper">
 
-                    <!-- Categorie 1: Account & Inloggen -->
+                    <!-- Categorie 1: Bezoek & contact -->
                     <div class="faq-category">
-                        <h3 class="category-title">Account & Inloggen</h3>
+                        <h3 class="category-title">Bezoek & contact</h3>
                         <div class="faq-items">
-
-                            <!-- FAQ Item: E-mail Configuratie -->
                             <details class="faq-item">
-                                <summary>Hoe kan ik mijn mail instellen?</summary>
+                                <summary>Moet ik een afspraak maken om langs te komen?</summary>
                                 <div class="faq-content">
-                                    <p>U kunt uw e-mail instellen in uw e-mailclient (Outlook, Thunderbird, Apple Mail, etc.) met behulp van de volgende instellingen:</p>
-                                    
-                                    <!-- Inkomende mailserver configuratie -->
-                                    <h4 class="faq-subtitle">Inkomende Mailserver (IMAP - aanbevolen):</h4>
-                                    <ul class="faq-list">
-                                        <li><strong>Server:</strong> imap.nexorait.nl</li>
-                                        <li><strong>Poort:</strong> 993</li>
-                                        <li><strong>Beveiliging:</strong> SSL/TLS</li>
-                                        <li><strong>Gebruikersnaam:</strong> Uw volledige e-mailadres</li>
-                                        <li><strong>Wachtwoord:</strong> Uw bijbehorend wachtwoord</li>
-                                    </ul>
-                                    
-                                    <!-- Uitgaande mailserver configuratie -->
-                                    <h4 class="faq-subtitle">Uitgaande Mailserver (SMTP):</h4>
-                                    <ul class="faq-list">
-                                        <li><strong>Server:</strong> smtp.nexorait.nl</li>
-                                        <li><strong>Poort:</strong> 587</li>
-                                        <li><strong>Beveiliging:</strong> TLS</li>
-                                        <li><strong>Gebruikersnaam:</strong> Uw volledige e-mailadres</li>
-                                        <li><strong>Wachtwoord:</strong> Uw bijbehorend wachtwoord</li>
-                                    </ul>
-                                    
-                                    <!-- Beveiligingstip -->
-                                    <div class="faq-note">
-                                        <p><strong>⚠️ Belangrijk:</strong> Gebruik altijd een beveiligde verbinding (SSL/TLS) om ervoor te zorgen dat uw wachtwoord en e-mails veilig worden verzonden.</p>
-                                    </div>
-                                    
-                                    <!-- Afsluitende zin en ondersteuning -->
-                                    <p>Nadat u deze instellingen heeft ingevoerd, test u of u e-mails kunt versturen en ontvangen. <strong>Komt u er niet uit? Neem contact op met onze servicedesk of meld een ticket via het serviceportaal.</strong></p>
+                                    <p>Nee, u bent tijdens openingstijden van harte welkom om binnen te lopen. Wilt u zeker weten dat iemand direct tijd voor u heeft, dan kunt u vooraf contact met ons opnemen.</p>
                                 </div>
                             </details>
 
                             <details class="faq-item">
-                                <summary>Hoe kan ik mijn wachtwoord resetten?</summary>
-                                <p>U kunt uw wachtwoord direct resetten via het inlogscherm door op "Wachtwoord
-                                    vergeten" te klikken. U ontvangt dan een e-mailbericht met verdere instructies.
-                                    Indien u geen e-mail ontvangt, neem dan contact op met onze helpdesk.</p>
-                            </details>
-                            <details class="faq-item">
-                                <summary>Wat moet ik doen als mijn account geblokkeerd is?</summary>
-                                <p>Een geblokkeerd account kan verschillende oorzaken hebben, zoals meerdere mislukte
-                                    inlogpogingen. Neem onmiddellijk contact op met onze service desk via telefoon of
-                                    e-mail. Wij zullen uw identiteit verifiëren en uw account ontgrendelen.</p>
-                            </details>
-                        </div>
-                    </div>
-
-                    <!-- Categorie 2: IT Ondersteuning -->
-                    <div class="faq-category">
-                        <h3 class="category-title">IT Ondersteuning</h3>
-                        <div class="faq-items">
-                            <details class="faq-item">
-                                <summary>Hoe meld ik een IT-probleem?</summary>
-                                <p>U kunt een probleem op drie manieren melden: (1) via het contactformulier op onze
-                                    website, (2) door direct te bellen met onze service desk, of (3) via e-mail. Zorg
-                                    ervoor dat u een duidelijke beschrijving van het probleem en uw contactgegevens
-                                    verstrekt.</p>
-                            </details>
-                            <details class="faq-item">
-                                <summary>Hoe lang duurt het voordat mijn ticket wordt opgelost?</summary>
-                                <p>De resolijtijd hangt af van de urgentie en complexiteit van uw probleem. Voor
-                                    kritieke problemen streven wij naar een responstijd van 2 uur, voor normale
-                                    problemen naar 24 uur. U ontvangt altijd een bevestiging van ontvangst van uw
-                                    ticket.</p>
-                            </details>
-                            <details class="faq-item">
-                                <summary>Bieden jullie ondersteuning op afstand?</summary>
-                                <p>Ja, we bieden ondersteuning op afstand voor veel voorkomende IT-problemen. Via een
-                                    beveiligde verbinding kunnen onze technici op uw apparaat werken. Dit is snel,
-                                    efficiënt en veilig. Om dit in te schakelen, dient u daar toestemming voor te geven.
-                                </p>
-                            </details>
-                        </div>
-                    </div>
-
-                    <!-- Categorie 3: Software & Apparaten -->
-                    <div class="faq-category">
-                        <h3 class="category-title">Software & Apparaten</h3>
-                        <div class="faq-items">
-                            <details class="faq-item">
-                                <summary>Hoe vraag ik nieuwe software aan?</summary>
-                                <p>U kunt software aanvragen via ons serviceportaal onder "Softwareverzoeken". Voeg een
-                                    omschrijving in van wat u nodig hebt en waarvoor. Ons team beoordeelt het verzoek en
-                                    neemt contact met u op voor eventuele vragen.</p>
-                            </details>
-                            <details class="faq-item">
-                                <summary>Kan ik hulp krijgen bij installatie van programma's?</summary>
-                                <p>Ja, onze technische afdeling helpt u graag met softwareinstallatie. U kunt een
-                                    verzoek indienen via het portal of contact opnemen met de helpdesk. Voor
-                                    afstandsondersteuning kunnen we op uw computer installeren.</p>
-                            </details>
-                            <details class="faq-item">
-                                <summary>Wat moet ik doen als mijn laptop traag is?</summary>
-                                <p>Een trage laptop kan verschillende oorzaken hebben. Controleer eerst of er voldoende
-                                    schijfruimte beschikbaar is en of achtergrondprogramma's veel resources gebruiken.
-                                    Neem contact op met ons als het probleem aanhoudt; onze technische afdeling kan
-                                    diagnosticeren en optimaliseren.</p>
-                            </details>
-                        </div>
-                    </div>
-
-                    <!-- Categorie 4: ICT Loket & Service -->
-                    <div class="faq-category">
-                        <h3 class="category-title">ICT Loket & Service</h3>
-                        <div class="faq-items">
-
-                            <!-- FAQ Item: Afspraken maken -->
-                            <details class="faq-item">
-                                <summary>Moet ik per se een afspraak maken om geholpen te worden door het ICT-loket?</summary>
+                                <summary>Kost de hulp van het ICT-loket geld?</summary>
                                 <div class="faq-content">
-                                    <p>Tijdens onze openingstijden kunt u zonder afspraak langskomen bij het ICT-loket. Wij raden echter aan om vooraf een afspraak te maken, zodat wij voldoende tijd kunnen reserveren om u optimaal te helpen en uw vragen adequaat te beantwoorden.</p>
+                                    <p>Onze ondersteuning is gratis en laagdrempelig. Alleen wanneer er sprake is van producten of onderdelen, informeren wij u vooraf duidelijk over eventuele kosten.</p>
                                 </div>
                             </details>
 
-                            <!-- FAQ Item: Kosten van dienstverlening -->
                             <details class="faq-item">
-                                <summary>Hoeveel kost het als ik een vraag heb voor het ICT-loket?</summary>
+                                <summary>Waar kan ik het ICT-loket vinden?</summary>
                                 <div class="faq-content">
-                                    <p>Onze dienstverlening is gratis en zo laagdrempelig mogelijk. U bent vrij om een vrijwillige bijdrage te geven via de fooipot bij de balie. Voor producten zoals laptops, muizen of accessoires brengen wij wel kosten in rekening.</p>
+                                    <p>U vindt ons op de Noordkade in Veghel. Kom gerust binnen met uw vraag; de koffie staat voor u klaar.</p>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+
+                    <!-- Categorie 2: Apparaten & ondersteuning -->
+                    <div class="faq-category">
+                        <h3 class="category-title">Apparaten & ondersteuning</h3>
+                        <div class="faq-items">
+                            <details class="faq-item">
+                                <summary>Waarmee kunnen jullie mij helpen?</summary>
+                                <div class="faq-content">
+                                    <p>U kunt bij ons terecht met vragen over computers, laptops, tablets, mobiele telefoons en printers. We luisteren naar uw situatie en zoeken samen naar een praktische oplossing.</p>
+                                </div>
+                            </details>
+                            <details class="faq-item">
+                                <summary>Helpen jullie ook bij trage of vastlopende apparaten?</summary>
+                                <div class="faq-content">
+                                    <p>Ja, zeker. Wij kijken graag mee wanneer een computer, laptop of tablet traag is of niet goed werkt en geven u helder advies over de beste vervolgstap.</p>
+                                </div>
+                            </details>
+                            <details class="faq-item">
+                                <summary>Kunnen jullie ook naar printers en randapparatuur kijken?</summary>
+                                <div class="faq-content">
+                                    <p>Ja, ook voor printers en andere hardware kunt u bij ons terecht. We helpen bij storingen, aansluitproblemen en algemene vragen over het gebruik.</p>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+
+                    <!-- Categorie 3: Reparatie & aanschaf -->
+                    <div class="faq-category">
+                        <h3 class="category-title">Reparatie & aanschaf</h3>
+                        <div class="faq-items">
+                            <details class="faq-item">
+                                <summary>Wat als mijn apparaat kapot is?</summary>
+                                <div class="faq-content">
+                                    <p>Wanneer een apparaat defect is, bekijken wij graag wat er aan de hand is. Indien mogelijk helpen we met een reparatie of adviseren we u over de meest passende oplossing.</p>
+                                </div>
+                            </details>
+                            <details class="faq-item">
+                                <summary>Kan ik bij jullie terecht voor een refurbished laptop?</summary>
+                                <div class="faq-content">
+                                    <p>Ja, wij adviseren u graag over een geschikte refurbished laptop. Zo helpen we u bij het vinden van een betrouwbare oplossing die past bij uw wensen en budget.</p>
+                                </div>
+                            </details>
+                            <details class="faq-item">
+                                <summary>Helpen jullie ook bedrijven met ICT-vragen?</summary>
+                                <div class="faq-content">
+                                    <p>Zeker. Naast particulieren ondersteunen wij ook bedrijven met uiteenlopende ICT-vragen, praktische ondersteuning en passend advies.</p>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+
+                    <!-- Categorie 4: Over het ICT-loket -->
+                    <div class="faq-category">
+                        <h3 class="category-title">Over het ICT-loket</h3>
+                        <div class="faq-items">
+                            <details class="faq-item">
+                                <summary>Wie werken er in het ICT-loket?</summary>
+                                <div class="faq-content">
+                                    <p>Het ICT-loket wordt gerund door ICT-studenten van het Koning Willem I College. Zo combineren we praktijkervaring met toegankelijke en klantgerichte ondersteuning.</p>
                                 </div>
                             </details>
 
-                            <!-- FAQ Item: Actieprijzen en kortingen -->
                             <details class="faq-item">
-                                <summary>Hebben jullie soms actieprijzen of periodes waarin ik korting kan krijgen op een device?</summary>
+                                <summary>Werken jullie samen met lokale bedrijven?</summary>
                                 <div class="faq-content">
-                                    <p>Wij hanteren het hele jaar door scherpe en eerlijke prijzen. Daarom werken wij niet met tijdelijke acties of kortingsperiodes, maar bieden wij altijd de beste prijs-kwaliteitverhouding.</p>
+                                    <p>Ja, wij werken regelmatig samen met bedrijven in de regio. Daardoor kunnen we, wanneer dat nodig is, extra kennis en ondersteuning inzetten.</p>
+                                </div>
+                            </details>
+
+                            <details class="faq-item">
+                                <summary>Wat maakt het ICT-loket bijzonder?</summary>
+                                <div class="faq-content">
+                                    <p>Wij bieden vriendelijke, duidelijke en professionele hulp op een laagdrempelige locatie op de Noordkade in Veghel. U bent altijd welkom om binnen te lopen met uw ICT-vraag.</p>
                                 </div>
                             </details>
 
@@ -293,17 +429,18 @@
                     <input type="email" placeholder="E-mail" required>
                     <select required>
                         <option value="">Onderwerp</option>
-                        <option>Algemeen</option>
-                        <option>Technisch support</option>
-                        <option>Facturering</option>
+                        <option>Algemene vraag</option>
+                        <option>Windows of app installatie</option>
+                        <option>Refurbished laptop of product</option>
+                        <option>Donatie of afspraak</option>
                     </select>
                     <textarea rows="5" placeholder="Bericht" required></textarea>
-                    <button type="submit" class="btn btn-primary">Verzenden</button>
+                    <button type="submit" class="btn btn-primary">Neem contact op</button>
                 </form>
                 <aside class="contact-details">
-                    <p><strong>Email:</strong> info@nexorait.nl</p>
-                    <p><strong>Tel:</strong> +31 20 123 4567</p>
-                    <p><strong>Locatie:</strong> Veghel, Nederland</p>
+                    <p><strong>Adres:</strong> Verlengde Noordkade 14, Veghel</p>
+                    <p><strong>Afspraak:</strong> Wij werken bij voorkeur op afspraak, maar u bent ook van harte welkom om binnen te lopen</p>
+                    <p><strong>Kosten:</strong> Onze hulp is gratis. De koffie staat voor u klaar!</p>
                 </aside>
             </div>
         </section>
@@ -313,8 +450,8 @@
     <footer class="site-footer">
         <div class="container">
             <div class="footer-col">
-                <h3>Over Nexora</h3>
-                <p>Professionele IT-service desk voor onderwijs en bedrijven.</p>
+                <h3>Over ICT-Loket</h3>
+                <p>Persoonlijke en toegankelijke ICT-ondersteuning op de Noordkade in Veghel, voor particulieren en bedrijven.</p>
             </div>
             <div class="footer-col">
                 <h3>Snelle Links</h3>
@@ -324,22 +461,21 @@
             </div>
             <div class="footer-col">
                 <h3>Diensten</h3>
-                <a href="#">Wachtwoordbeheer</a>
-                <a href="#">Netwerkbeheer</a>
-                <a href="#">Cloud services</a>
+                <a href="#">Computer en laptop hulp</a>
+                <a href="#">Printer en hardware hulp</a>
+                <a href="#">Refurbished laptops</a>
             </div>
             <div class="footer-col">
                 <h3>Contact</h3>
-                <p>info@nexorait.nl</p>
-                <p>+31 20 123 4567</p>
+                <p>Verlengde Noordkade 14, Veghel</p>
+                <p>Wij werken bij voorkeur op afspraak</p>
+                <p><a href="https://www.facebook.com/Ictloketnoordkade" target="_blank" rel="noopener noreferrer">Facebook: @Ictloketnoordkade</a></p>
                 <div class="social">
-                    <a href="#" aria-label="Twitter">🐦</a>
-                    <a href="#" aria-label="LinkedIn">🔗</a>
-                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="https://www.facebook.com/Ictloketnoordkade" aria-label="Facebook" target="_blank" rel="noopener noreferrer">📘</a>
                 </div>
             </div>
         </div>
-        <p>© 2026 Nexora IT Service Desk – Alle rechten voorbehouden</p>
+        <p>© 2026 ICT-Loket – Alle rechten voorbehouden</p>
         
         <!-- Powered by sectie -->
         <div class="powered-by">
@@ -347,6 +483,34 @@
             <img src="logo_blue_red.png" alt="Logo" class="powered-logo">
         </div>
     </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mainNav = document.querySelector('.main-nav');
+
+        if (navToggle && mainNav) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = mainNav.classList.toggle('open');
+                navToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            mainNav.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth <= 768) {
+                        mainNav.classList.remove('open');
+                        navToggle.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 768) {
+                    mainNav.classList.remove('open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
